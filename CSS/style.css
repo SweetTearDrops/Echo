@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* https://fonts.google.com/selection/embed */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* https://fonts.google.com/selection/embed */ 
+
+html {
+    overflow-x: hidden;
+    position: relative;
+}
+
+div, p, li, a {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    color: #f9f9f9;
+}
+
+h2 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*--------------------------HEADER/NAV---------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+header {
+    position: sticky; 
+    top: 0;
+    width: 100vw;
+    height: 15vh;
+    background-color: #08182B;
+    padding: 0.5vh;
+    position: relative;
+}
+
+#menu {
+    position: absolute;
+    cursor: pointer;
+    top: 1.5vh;
+    left: 1vw;
+    z-index: 2;
+    transform-origin: 50% 30%; /* Zorgen dat de origin zo staat de het logo eigenlijk niet verplaatst s*/
+    transition: transform 0.5s ease;
+}
+
+#menu-box {
+    display: none;
+    background-image: url("../Assets/menu_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    transition: opacity 2s ease;
+    top: 1vh;
+    font-weight: 500;
+    left: 0.5vw;
+    width: 20vw;
+    padding: 1.5vw 2vw 3vw 1vw;
+    
+}
+
+#menu-box a {
+    text-decoration: none;
+    font-size: 35px;
+    line-height: 45px;
+    margin-left: 8vw;
+}
+
+.align-right {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    column-gap: 3vw;
+    height: 15vh;
+    align-items: center;
+    margin-right: 2vw;
+}
+
+.join-us {
+    background-color: #82A3A1;
+    border-radius: 16px;
+    padding: 1vh 3vw;
+    font-size: 35px;
+    font-weight: 700;
+    text-decoration: none;
+    height: 4vh;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #82A3A1;
+  width: 5vw;
+  height: 2.8vh;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox-label .ball {
+  background-color: #102640;
+  width: 2vw;
+  height: 3.5vh;
+  position: absolute;
+  left: 4.5px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(3.1vw);
+}
+
+#label img {
+    width: 1.9vw;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*----------------------------BANNER-----------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.banner {
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgb(70,83,98);
+    background: linear-gradient(0deg, rgba(70,83,98,1) 0%, rgba(1,25,54,1) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.banner img {
+    align-self:flex-end
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------DARK MODE---------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+body.dark {background-color: #101010;} /* #9b59b6 */
