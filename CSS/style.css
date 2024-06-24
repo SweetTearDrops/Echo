@@ -370,6 +370,46 @@ header {
     width: 30vw;
 }
 
+.button {
+    margin: 5vh 0 0 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.news-button {
+    width: 15vw;
+    background-color: #465362;
+    border-radius: 16px;
+    padding: 3vh 3vw;
+    font-size: 35px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    height: 4vh;
+    transition: background-color 0.2s ease;
+}
+
+.news-button:hover {
+    background-color: #08182B;
+}
+
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*----------------------------FOOTER-----------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+footer {
+    background: rgb(1,25,54);
+    background: linear-gradient(0deg, rgba(1,25,54,1) 0%, rgba(70,83,98,1) 100%);
+    width: 100vw;
+    height: 20vh;
+}
+
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /*---------------------------DARK MODE---------------------------*/
