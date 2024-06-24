@@ -2,14 +2,18 @@
 /* https://fonts.google.com/selection/embed */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-/* https://fonts.google.com/selection/embed */ 
+/* https://fonts.google.com/selection/embed */
 
 html {
     overflow-x: hidden;
     position: relative;
+    scroll-behavior: smooth;
 }
 
-div, p, li, a {
+div,
+p,
+li,
+a {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -35,7 +39,7 @@ body {
 /*---------------------------------------------------------------*/
 
 header {
-    position: fixed; 
+    position: fixed;
     top: 0;
     width: 100vw;
     height: 15vh;
@@ -46,11 +50,16 @@ header {
 #menu {
     position: absolute;
     cursor: pointer;
-    top: 1.5vh;
+    top: 2vh;
     left: 1vw;
     z-index: 2;
-    transform-origin: 50% 30%; /* Zorgen dat de origin zo staat de het logo eigenlijk niet verplaatst s*/
-    transition: transform 0.5s ease;
+    transform-origin: 50% 30%;
+    /* Zorgen dat de origin zo staat de het logo eigenlijk niet verplaatst s*/
+    transition: transform 0.5s ease, scale 0.3s ease;
+}
+
+#menu:hover {
+    scale: 1.05;
 }
 
 #menu-box {
@@ -58,14 +67,14 @@ header {
     background-image: url("../Assets/menu_bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    position: fixed; 
+    position: fixed;
     transition: opacity 2s ease;
     top: 1vh;
     font-weight: 500;
     left: 0.5vw;
     width: 20vw;
     padding: 1.5vw 2vw 3vw 1vw;
-    
+
 }
 
 #menu-box a {
@@ -93,8 +102,7 @@ header {
     font-weight: 700;
     text-decoration: none;
     height: 4vh;
-    transition: background-color 0.2s ease;
-    transition: scale 0.3s ease;
+    transition: background-color 0.2s ease, scale 0.3s ease;
 }
 
 .join-us:hover {
@@ -103,40 +111,40 @@ header {
 }
 
 .checkbox {
-  opacity: 0;
-  position: absolute;
+    opacity: 0;
+    position: absolute;
 }
 
 .checkbox-label {
-  background-color: #82A3A1;
-  width: 5vw;
-  height: 2.8vh;
-  border-radius: 50px;
-  position: relative;
-  padding: 5px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    background-color: #82A3A1;
+    width: 4.5vw;
+    height: 2.8vh;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .checkbox-label .ball {
-  background-color: #465362;
-  width: 2vw;
-  height: 3.6vh;
-  position: absolute;
-  top: 1.13px;
-  left: 3px;
-  border-radius: 50%;
-  transition: transform 0.2s linear;
+    background-color: #465362;
+    width: 2.1vw;
+    height: 3.9vh;
+    position: absolute;
+    top: 0;
+    left: -0.5px;
+    border-radius: 50%;
+    transition: transform 0.2s linear, background-color 0.2s ease;
 }
 
-.checkbox:checked + .checkbox-label .ball {
-  transform: translateX(3.2vw);
+.checkbox:checked+.checkbox-label .ball {
+    transform: translateX(3vw);
 }
 
 #label img {
-    width: 1.9vw;
+    width: 1.7vw;
 }
 
 /*---------------------------------------------------------------*/
@@ -151,14 +159,14 @@ header {
     height: 100vh;
     top: 0;
     left: 0;
-    background: rgb(70,83,98);
-    background: linear-gradient(0deg, rgba(70,83,98,1) 0%, rgba(1,25,54,1) 100%);
+    background: rgb(70, 83, 98);
+    background: linear-gradient(0deg, rgba(70, 83, 98, 1) 0%, rgba(1, 25, 54, 1) 100%);
     display: flex;
     justify-content: center;
 }
 
 .banner img {
-    align-self:flex-end
+    align-self: flex-end
 }
 
 /*---------------------------------------------------------------*/
@@ -176,7 +184,7 @@ header {
     margin: 5vh auto 5vh auto;
     display: flex;
     align-items: center;
-    font-size: 96px;
+    font-size: 60px;
     position: relative;
     z-index: -1;
 }
@@ -189,6 +197,7 @@ header {
 .block-title img {
     position: absolute;
     margin-left: 3vw;
+    width: 10vw;
 }
 
 /*---------------------------------------------------------------*/
@@ -198,11 +207,12 @@ header {
 /*---------------------------------------------------------------*/
 
 .block-text {
-    width: 88vw;
+    width: 70vw;
     height: auto;
-    font-size: 32px;
+    font-size: 20px;
     margin: 0 auto;
     z-index: -2;
+    line-height: 30px;
 }
 
 .block-text p {
@@ -240,22 +250,123 @@ header {
     max-width: 30vw;
 }
 
+.person-intro img {
+    width: 15vw;
+}
+
 .boops-intro {
     margin: 5vh 0 0 5vw;
 }
 
 .boops-intro p {
     align-self: center;
-    margin-left: 3vw;
-}
-
-.extra-text {
-    align-self: center;
+    margin-left: 2vw;
 }
 
 .idreams-spacing {
     align-self: flex-end;
     margin: 0 5vw 5vh 0;
+    display: flex;
+    align-items: center;
+    text-align: end;
+}
+
+.idreams-spacing p {
+    margin-right: 2vw;
+}
+
+.extra-text {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    column-gap: 3vw;
+    width: 20vw;
+}
+
+.extra-text img {
+    width: 2vw;
+
+}
+
+.extra-text p {
+    margin: 3vh 0;
+    align-self:center;
+}
+
+.arrow1 {
+    align-self: flex-start;
+}
+
+.arrow2 {
+    align-self: flex-end;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*-------------------------JOIN US BOX---------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.join-us-box {
+    background-image: url("../Assets/join_us_box.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 88vw;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10vh 0;
+}
+
+.join-us-box h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.join-us-box p {
+    font-size: 20px;
+    margin: 5vh auto;
+    line-height: 25px;
+    width: 30vw;
+
+}
+
+.join-us2 {
+    background-color: #465362;
+    border-radius: 16px;
+    padding: 1vh 3vw;
+    font-size: 35px;
+    font-weight: 700;
+    text-decoration: none;
+    height: 4vh;
+    transition: background-color 0.2s ease;
+}
+
+.join-us2:hover {
+    background-color: #08182B;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*----------------------------NIEUWS-----------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.article-block {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    column-gap: 5vw;
+}
+
+.article {
+    text-align: center;
+}
+
+.article img {
+    width: 30vw;
 }
 
 /*---------------------------------------------------------------*/
@@ -264,7 +375,11 @@ header {
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 
-body.dark {background-color: #0A1623;} /* #9b59b6 */
+body.dark {
+    background-color: #0A1623;
+}
+
+/* #9b59b6 */
 body.dark .block-text p {
     color: #f9f9f9;
 }
