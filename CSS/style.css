@@ -24,6 +24,10 @@ h2 {
     font-variation-settings: "wdth" 100;
 }
 
+body {
+    width: 100vw;
+}
+
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /*--------------------------HEADER/NAV---------------------------*/
@@ -31,13 +35,12 @@ h2 {
 /*---------------------------------------------------------------*/
 
 header {
-    position: sticky; 
+    position: fixed; 
     top: 0;
     width: 100vw;
     height: 15vh;
-    background-color: #08182B;
+    background-color: #011936;
     padding: 0.5vh;
-    position: relative;
 }
 
 #menu {
@@ -55,7 +58,7 @@ header {
     background-image: url("../Assets/menu_bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
+    position: fixed; 
     transition: opacity 2s ease;
     top: 1vh;
     font-weight: 500;
@@ -90,6 +93,13 @@ header {
     font-weight: 700;
     text-decoration: none;
     height: 4vh;
+    transition: background-color 0.2s ease;
+    transition: scale 0.3s ease;
+}
+
+.join-us:hover {
+    background-color: #465362;
+    scale: 1.1;
 }
 
 .checkbox {
@@ -111,18 +121,18 @@ header {
 }
 
 .checkbox-label .ball {
-  background-color: #102640;
+  background-color: #465362;
   width: 2vw;
-  height: 3.5vh;
+  height: 3.6vh;
   position: absolute;
-  left: 4.5px;
-  top: 2px;
+  top: 1.13px;
+  left: 3px;
   border-radius: 50%;
   transition: transform 0.2s linear;
 }
 
 .checkbox:checked + .checkbox-label .ball {
-  transform: translateX(3.1vw);
+  transform: translateX(3.2vw);
 }
 
 #label img {
@@ -137,7 +147,6 @@ header {
 
 .banner {
     z-index: -1;
-    position: absolute;
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -154,8 +163,108 @@ header {
 
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
+/*-------------------------BLOCK TITLES--------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.block-title {
+    background-image: url("../Assets/block.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: 27vh;
+    margin: 5vh auto 5vh auto;
+    display: flex;
+    align-items: center;
+    font-size: 96px;
+    position: relative;
+    z-index: -1;
+}
+
+.block-title h2 {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.block-title img {
+    position: absolute;
+    margin-left: 3vw;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------BLOCK TEXT--------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.block-text {
+    width: 88vw;
+    height: auto;
+    font-size: 32px;
+    margin: 0 auto;
+    z-index: -2;
+}
+
+.block-text p {
+    color: #000;
+    margin: 5vh 0;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------INTRO BOX---------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.intro-box {
+    width: 88vw;
+    background-image: url("../Assets/intro_box.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-box p {
+    font-size: 32px;
+}
+
+.person-intro {
+    display: flex;
+    flex-direction: row;
+}
+
+.person-intro p {
+    max-width: 30vw;
+}
+
+.boops-intro {
+    margin: 5vh 0 0 5vw;
+}
+
+.boops-intro p {
+    align-self: center;
+    margin-left: 3vw;
+}
+
+.extra-text {
+    align-self: center;
+}
+
+.idreams-spacing {
+    align-self: flex-end;
+    margin: 0 5vw 5vh 0;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
 /*---------------------------DARK MODE---------------------------*/
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 
-body.dark {background-color: #101010;} /* #9b59b6 */
+body.dark {background-color: #0A1623;} /* #9b59b6 */
+body.dark .block-text p {
+    color: #f9f9f9;
+}
