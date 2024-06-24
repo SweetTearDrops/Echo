@@ -54,6 +54,7 @@ header {
     left: 1vw;
     z-index: 2;
     transform-origin: 50% 30%;
+    width: 3.5vw;
     /* Zorgen dat de origin zo staat de het logo eigenlijk niet verplaatst s*/
     transition: transform 0.5s ease, scale 0.3s ease;
 }
