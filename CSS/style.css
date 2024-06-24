@@ -42,7 +42,7 @@ header {
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 15vh;
+    height: 16vh;
     background-color: #011936;
     padding: 0.5vh;
 }
@@ -54,7 +54,7 @@ header {
     left: 1vw;
     z-index: 2;
     transform-origin: 50% 30%;
-    width: 3.5vw;
+    min-width: 3.4vw;
     /* Zorgen dat de origin zo staat de het logo eigenlijk niet verplaatst s*/
     transition: transform 0.5s ease, scale 0.3s ease;
 }
@@ -92,7 +92,7 @@ header {
     column-gap: 3vw;
     height: 15vh;
     align-items: center;
-    margin-right: 2vw;
+    margin-right: 5vw;
 }
 
 .join-us {
@@ -164,6 +164,7 @@ header {
     background: linear-gradient(0deg, rgba(70, 83, 98, 1) 0%, rgba(1, 25, 54, 1) 100%);
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .banner img {

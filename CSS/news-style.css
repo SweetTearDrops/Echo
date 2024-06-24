@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* https://fonts.google.com/selection/embed */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* https://fonts.google.com/selection/embed */
+
+html {
+    overflow-x: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+div,
+p,
+li,
+a {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    color: #f9f9f9;
+}
+
+h2 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+body {
+    width: 100vw;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*--------------------------HEADER/NAV---------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+
+
+.news-header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 16vh;
+    background-color: #011936;
+    padding: 0.5vh;
+}
+
+.back-button {
+    position: absolute;
+    top: 5vh;
+    left: 2vw;
+    z-index: 2;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*----------------------------BANNER-----------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.news-banner {
+    position: absolute;
+    top: 40vh;
+    width: 90vw;
+    height: 27vh;
+    background-image: url("../Assets/nieuws_banner.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.news-banner h2 {
+    font-size: 60px;
+    margin: 0 auto;
+}
+
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*-------------------------BLOCK TITLES--------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.article-banner {
+    background-image: url("../Assets/article_banner.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: 27vh;
+    margin: 5vh auto 5vh auto;
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    z-index: -1;
+}
+
+.article-banner h2 {
+    text-align: center;
+    margin: -5vh auto 0 auto;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------BLOCK TEXT--------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+.block-text2 {
+    width: 70vw;
+    height: auto;
+    font-size: 20px;
+    margin: 0 auto 10vh auto;
+    z-index: -2;
+    line-height: 30px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 5vw;
+}
+
+.block-text2 p {
+    color: #000;
+    margin: 5vh 0;
+}
+
+.block-text2 img {
+    width: 40vw;
+    max-height: 60vh;
+    align-self: center;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*----------------------------FOOTER-----------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+footer {
+    background: rgb(1,25,54);
+    background: linear-gradient(0deg, rgba(70, 83, 98, 1) 0%, rgba(1, 25, 54, 1) 100%);
+    width: 100vw;
+    height: 20vh;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------DARK MODE---------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+body.dark {
+    background-color: #0A1623;
+}
+
+/* #9b59b6 */
+body.dark .block-text p {
+    color: #f9f9f9;
+}
