@@ -405,7 +405,7 @@ header {
 
 footer {
     background: rgb(1,25,54);
-    background: linear-gradient(0deg, rgba(1,25,54,1) 0%, rgba(70,83,98,1) 100%);
+    background: linear-gradient(0deg, rgba(70, 83, 98, 1) 0%, rgba(1, 25, 54, 1) 100%);
     width: 100vw;
     height: 20vh;
 }
