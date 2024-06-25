@@ -4,32 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 /* https://fonts.google.com/selection/embed */
 
-html {
-    overflow-x: hidden;
-    position: relative;
-    scroll-behavior: smooth;
-}
-
-div,
-p,
-li,
-a {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings: "slnt" 0;
-    color: #f9f9f9;
-}
-
-h2 {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-}
-
 body {
-    width: 100vw;
+    width: 100%;
 }
 
 /*---------------------------------------------------------------*/
@@ -37,8 +13,6 @@ body {
 /*--------------------------HEADER/NAV---------------------------*/
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
-
-
 
 .news-header {
     position: fixed;
@@ -65,7 +39,7 @@ body {
 .news-banner {
     position: absolute;
     top: 40vh;
-    width: 90vw;
+    width: 100vw;
     height: 27vh;
     background-image: url("../Assets/nieuws_banner.png");
     background-size: contain;
@@ -135,19 +109,6 @@ body {
 
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
-/*----------------------------FOOTER-----------------------------*/
-/*---------------------------------------------------------------*/
-/*---------------------------------------------------------------*/
-
-footer {
-    background: rgb(1,25,54);
-    background: linear-gradient(0deg, rgba(70, 83, 98, 1) 0%, rgba(1, 25, 54, 1) 100%);
-    width: 100vw;
-    height: 20vh;
-}
-
-/*---------------------------------------------------------------*/
-/*---------------------------------------------------------------*/
 /*---------------------------DARK MODE---------------------------*/
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
@@ -159,4 +120,106 @@ body.dark {
 /* #9b59b6 */
 body.dark .block-text p {
     color: #f9f9f9;
+}
+
+
+
+
+@media (max-width: 280px) {
+
+/*---------------------------------------------------------------*/
+/*--------------------------HEADER/NAV---------------------------*/
+/*---------------------------------------------------------------*/
+
+.news-header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: #011936;
+    padding: 0.5vh;
+}
+
+.back-button {
+    position: absolute;
+    top: 4vh;
+    left: 3vw;
+    z-index: 2;
+    width: 7vw;
+}
+
+/*---------------------------------------------------------------*/
+/*----------------------------BANNER-----------------------------*/
+/*---------------------------------------------------------------*/
+
+.news-banner {
+    position: absolute;
+    top: 30vh;
+    width: 90vw;
+    height: 4vh;
+    background-image: url("../Assets/nieuws_banner.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.news-banner h2 {
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.banner {
+    margin: 0 0;
+    max-width: 100%;
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------------BLOCK TITLES--------------------------*/
+/*---------------------------------------------------------------*/
+
+.article-banner {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: 4vh;
+    margin: 2vh auto 2vh auto;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    z-index: -1;
+}
+
+.article-banner h2 {
+    text-align: center;
+    margin: -1vh auto 0 auto;
+}
+
+/*---------------------------------------------------------------*/
+/*---------------------------BLOCK TEXT--------------------------*/
+/*---------------------------------------------------------------*/
+
+.block-text2 {
+    width: 80vw;
+    height: auto;
+    font-size: 12px;
+    margin: 0 auto 2vh auto;
+    z-index: -2;
+    line-height: 15px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 5vw;
+}
+
+.block-text2 p {
+    color: #000;
+    margin: 2vh 0;
+}
+
+.block-text2 img {
+    width: 90vw;
+    max-height: 60vh;
+    align-self: center;
+}
+
 }
