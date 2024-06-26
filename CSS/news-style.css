@@ -330,3 +330,116 @@ body.dark .block-text p {
     }
 
 }
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*-------------------RESPONSIVENESS TABLET-----------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+@media (min-width: 571px) and (max-width: 1025px) {
+
+    /*---------------------------------------------------------------*/
+    /*--------------------------HEADER/NAV---------------------------*/
+    /*---------------------------------------------------------------*/
+
+    .news-header {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 10vh;
+        background-color: #011936;
+        padding: 0.5vh;
+    }
+
+    .back-button {
+        position: absolute;
+        top: 3vh;
+        left: 3vw;
+        z-index: 2;
+        width: 3vw;
+    }
+
+    .align-right {
+        max-height: 10vh;
+        margin-right: 5vw;
+        width: auto;
+    }
+
+    /*---------------------------------------------------------------*/
+    /*----------------------------BANNER-----------------------------*/
+    /*---------------------------------------------------------------*/
+
+    .news-banner {
+        position: absolute;
+        top: 40vh;
+        width: 90vw;
+        height: 20vh;
+        background-image: url("../Assets/nieuws_banner.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+    }
+
+    .news-banner h2 {
+        font-size: 45px;
+        margin: 0 auto;
+    }
+
+    .banner {
+        margin: 0 0;
+        max-width: 100%;
+    }
+
+    /*---------------------------------------------------------------*/
+    /*-------------------------BLOCK TITLES--------------------------*/
+    /*---------------------------------------------------------------*/
+
+    .article-banner {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 90vw;
+        height: 16vh;
+        margin: 2vh auto 2vh auto;
+        display: flex;
+        align-items: center;
+        font-size: 35px;
+        z-index: -1;
+    }
+
+    .article-banner h2 {
+        text-align: center;
+        margin: -1vh auto 0 auto;
+    }
+
+    /*---------------------------------------------------------------*/
+    /*---------------------------BLOCK TEXT--------------------------*/
+    /*---------------------------------------------------------------*/
+
+    .block-text2 {
+        width: 80vw;
+        height: auto;
+        font-size: 20px;
+        margin: 0 auto 2vh auto;
+        z-index: -2;
+        line-height: 25px;
+        display: flex;
+        flex-direction: column;
+        column-gap: 5vw;
+    }
+
+    .block-text2 p {
+        color: #000;
+        margin: 2vh 0;
+    }
+
+    .block-text2 img {
+        width: 60vw;
+        max-height: 60vh;
+        align-self: center;
+    }
+
+}
+
+
