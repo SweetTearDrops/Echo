@@ -738,7 +738,7 @@ body.dark .block-text p {
     }
 
     .checkbox:checked+.checkbox-label .ball {
-        transform: translateX(11vw);
+        transform: translateX(10vw);
     }
 
     #label img {
