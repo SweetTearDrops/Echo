@@ -31,6 +31,7 @@ h2 {
 body {
     overflow-x: hidden;
     background-color: #f9f9f9;
+    transition: background-color 1s ease;
 }
 
 /*---------------------------------------------------------------*/
@@ -79,7 +80,6 @@ header {
     left: 0.5vw;
     width: 20vw;
     padding: 1.5vw 2vw 3vw 1vw;
-
 }
 
 #menu-box a {
@@ -416,10 +416,23 @@ footer {
     background: rgb(1, 25, 54);
     background: linear-gradient(0deg, rgba(70, 83, 98, 1) 0%, rgba(1, 25, 54, 1) 100%);
     width: 100vw;
-    height: 20vh;
+    height: 15vh;
+    color:#f9f9f9;
+    padding: 5vh 2vw 0vh 2vw;
+    margin-top: 7vh;
+    overflow-y: hidden;
 }
 
+footer h2 {
+    font-size: 30px;
+    margin: 0 0 2vh 0;
+}
 
+footer p {
+    font-size: 15px;
+    line-height: 20px;
+    width: 50vw;
+}
 
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
@@ -665,7 +678,18 @@ footer {
     /*---------------------------------------------------------------*/
 
     footer {
-        height: 10vh;
+        height: 20vh;
+    }
+
+    footer h2 {
+        font-size: 20px;
+        margin: 0 0 2vh 0;
+    }
+    
+    footer p {
+        font-size: 12px;
+        line-height: 15px;
+        width: 90vw;
     }
 }
 
@@ -919,7 +943,18 @@ footer {
     /*---------------------------------------------------------------*/
 
     footer {
-        height: 10vh;
+        height: 20vh;
+    }
+
+    footer h2 {
+        font-size: 20px;
+        margin: 0 0 2vh 0;
+    }
+    
+    footer p {
+        font-size: 12px;
+        line-height: 15px;
+        width: 90vw;
     }
 }
 
@@ -1169,7 +1204,18 @@ footer {
     /*---------------------------------------------------------------*/
 
     footer {
-        height: 10vh;
+        height: 15vh;
+    }
+
+    footer h2 {
+        font-size: 20px;
+        margin: 0 0 2vh 0;
+    }
+    
+    footer p {
+        font-size: 12px;
+        line-height: 15px;
+        width: 90vw;
     }
 }
 
@@ -1421,7 +1467,18 @@ footer {
     /*---------------------------------------------------------------*/
 
     footer {
-        height: 10vh;
+        height: 20vh;
+    }
+
+    footer h2 {
+        font-size: 30px;
+        margin: 0 0 2vh 0;
+    }
+    
+    footer p {
+        font-size: 15px;
+        line-height: 20px;
+        width: 80vw;
     }
 }
 
@@ -1671,8 +1728,21 @@ footer {
     /*---------------------------------------------------------------*/
 
     footer {
-        height: 15vh;
+        min-height: 15vh;
         margin: 5vh 0 0 0;
+        padding: 5vh 2vw 0vh 2vw;
+        margin-top: 7vh;
+    }
+    
+    footer h2 {
+        font-size: 30px;
+        margin: 0 0 2vh 0;
+    }
+    
+    footer p {
+        font-size: 15px;
+        line-height: 20px;
+        width: 70vw;
     }
 }
 
@@ -2425,6 +2495,262 @@ footer {
         margin: 5vh 0 0 0;
     }
 }
+
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*----------------RESPONSIVENESS DESKTOP SMALLER-----------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+
+@media (min-width: 2560px) and (max-width: 2900px) {
+    /*---------------------------------------------------------------*/
+    /*--------------------------HEADER/NAV---------------------------*/
+    /*---------------------------------------------------------------*/
+
+    header {
+        height: 15vh;
+    }
+
+    #menu {
+        min-width: 3.4vw;
+        max-width: 6vw;
+        z-index: 3;
+        top: 0vh;
+    }
+
+    #menu-box {
+        background-image: url("../Assets/phone_menu_bg.png");
+        background-size: cover;
+        top: 1vh;
+        width: 35vw;
+        height: 16vh;
+        z-index: 2;
+    }
+
+    #menu-box a {
+        font-size: 25px;
+        line-height: 30px;
+        margin-left: 10vw;
+    }
+
+    .align-right {
+        height: 15vh;
+        margin-right: 5vw;
+        width: auto;
+    }
+
+    .join-us {
+        font-size: 25px;
+        height: auto;
+    }
+
+    .checkbox-label {
+        width: 10vw;
+        height: 4vh;
+    }
+
+    .checkbox-label .ball {
+        width: 35%;
+        height: 100%;
+    }
+
+    .checkbox:checked+.checkbox-label .ball {
+        transform: translateX(7vw);
+    }
+
+    #label img {
+        width: 3vw;
+    }
+
+    /*---------------------------------------------------------------*/
+    /*----------------------------BANNER-----------------------------*/
+    /*---------------------------------------------------------------*/
+
+    .banner {
+        height: 90vh;
+    }
+
+    .banner img {
+        align-self: center;
+        width: 40vw;
+        margin-top: 10vh;
+    }
+
+    /*---------------------------------------------------------------*/
+    /*-------------------------BLOCK TITLES--------------------------*/
+    /*---------------------------------------------------------------*/
+
+    .block-title {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 60vw;
+        height: 25vh;
+        margin: 3vh auto 0 auto;
+        font-size: 35px;
+    }
+
+    .block-title h2 {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .block-title img {
+        width: 8vw;
+    }
+
+    /*---------------------------------------------------------------*/
+    /*---------------------------BLOCK TEXT--------------------------*/
+    /*---------------------------------------------------------------*/
+
+    .block-text {
+        width: 80vw;
+        font-size: 20px;
+        line-height: 25px;
+        margin: 0 auto;
+    }
+
+    .block-text p {
+        margin: 2vh 0;
+    }
+
+    /*---------------------------------------------------------------*/
+    /*---------------------------INTRO BOX---------------------------*/
+    /*---------------------------------------------------------------*/
+
+    .intro-box {
+        width: 80vw;
+        background-image: url("../Assets/big_mobile_intro_box.png");
+        background-size: cover;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-box p {
+        font-size: 20px;
+    }
+
+    .person-intro {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .person-intro img {
+        width: 15vw;
+    }
+
+    .boops-intro {
+        margin: 1vh 0 0 1vw;
+    }
+
+    .boops-intro p {
+        align-self: center;
+        margin-left: 2vw;
+    }
+
+    .idreams-spacing {
+        align-self: flex-end;
+        margin: 0 1vw 1vh 0;
+        display: flex;
+        align-items: center;
+        text-align: end;
+    }
+
+    .idreams-spacing p {
+        margin-right: 2vw;
+    }
+
+    .extra-text {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        column-gap: 1vw;
+        width: 20vw;
+    }
+
+    .extra-text img {
+        width: 5vw;
+    }
+
+    .extra-text p {
+        margin: 1vh 0;
+        align-self: center;
+    }
+
+    .arrow1 {
+        align-self: flex-start;
+    }
+
+    .arrow2 {
+        align-self: flex-end;
+    }
+
+    /*---------------------------------------------------------------*/
+    /*-------------------------JOIN US BOX---------------------------*/
+    /*---------------------------------------------------------------*/
+
+    .join-us-box {
+        background-image: url("../Assets/big_mobile_join_us_box.png");
+        background-size: contain;
+        height: auto;
+        width: 88vw;
+        margin: 0 auto;
+        text-align: center;
+        padding: 15vh 0;
+    }
+
+    .join-us-box h2 {
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .join-us-box p {
+        font-size: 20px;
+        margin: 3vh auto 6vh auto;
+        line-height: 25px;
+        width: 60vw;
+    }
+
+    .join-us2 {
+        padding: 1vh 3vw;
+        font-size: 25px;
+    }
+
+    /*---------------------------------------------------------------*/
+    /*----------------------------NIEUWS-----------------------------*/
+    /*---------------------------------------------------------------*/
+
+    .article-block {
+        width: 90vw;
+        flex-direction: row;
+    }
+
+    .article img {
+        width: 40vw;
+    }
+
+    .button {
+        margin: 2vh 0 0 0;
+    }
+
+    .news-button {
+        width: 20vw;
+        padding: 1vh 3vw;
+        font-size: 25px;
+        height: auto;
+    }
+
+    /*---------------------------------------------------------------*/
+    /*----------------------------FOOTER-----------------------------*/
+    /*---------------------------------------------------------------*/
+
+    footer {
+        height: 15vh;
+        margin: 5vh 0 0 0;
+    }
+}
+
 
 
 /*---------------------------------------------------------------*/
