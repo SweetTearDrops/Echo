@@ -21,9 +21,15 @@
 
 .back-button {
     position: absolute;
-    top: 5vh;
-    left: 2vw;
+    top: 0vh;
+    left: 0vw;
     z-index: 2;
+    width: 9vw;
+    transition: scale 0.5s ease;
+}
+
+.back-button:hover {
+    scale: 1.1;
 }
 
 /*---------------------------------------------------------------*/
@@ -144,10 +150,10 @@ body.dark .block-text p {
 
     .back-button {
         position: absolute;
-        top: 4vh;
-        left: 3vw;
+        top: 0vh;
+        left: 0vw;
         z-index: 2;
-        width: 7vw;
+        min-width: 35vw;
     }
 
     /*---------------------------------------------------------------*/
@@ -249,10 +255,10 @@ body.dark .block-text p {
 
     .back-button {
         position: absolute;
-        top: 3vh;
-        left: 3vw;
+        top: 0vh;
+        left: 0vw;
         z-index: 2;
-        width: 7vw;
+        width: 20vw;
     }
 
     /*---------------------------------------------------------------*/
@@ -354,10 +360,10 @@ body.dark .block-text p {
 
     .back-button {
         position: absolute;
-        top: 3vh;
-        left: 3vw;
+        top: 0vh;
+        left: 0vw;
         z-index: 2;
-        width: 4vw;
+        width: 18vw;
     }
 
     /*---------------------------------------------------------------*/
@@ -459,10 +465,10 @@ body.dark .block-text p {
 
     .back-button {
         position: absolute;
-        top: 3vh;
-        left: 3vw;
+        top: 0vh;
+        left: 0vw;
         z-index: 2;
-        width: 3vw;
+        width: 12vw;
     }
 
     .align-right {
@@ -570,10 +576,10 @@ body.dark .block-text p {
 
     .back-button {
         position: absolute;
-        top: 3vh;
-        left: 3vw;
+        top: 0vh;
+        left: 0vw;
         z-index: 2;
-        width: 3vw;
+        width: 10vw;
     }
 
     .align-right {
@@ -681,10 +687,10 @@ body.dark .block-text p {
 
     .back-button {
         position: absolute;
-        top: 3vh;
-        left: 3vw;
+        top: 0vh;
+        left: 0vw;
         z-index: 2;
-        width: 3vw;
+        width: 9vw;
     }
 
     .align-right {
@@ -793,10 +799,10 @@ body.dark .block-text p {
 
     .back-button {
         position: absolute;
-        top: 3vh;
-        left: 3vw;
+        top: 0vh;
+        left: 0vw;
         z-index: 2;
-        width: 3vw;
+        width: 8vw;
     }
 
     .align-right {

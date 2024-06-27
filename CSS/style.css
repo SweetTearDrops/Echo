@@ -51,13 +51,15 @@ header {
 #menu {
     position: absolute;
     cursor: pointer;
-    top: 2vh;
-    left: 1vw;
+    top: 1vh;
+    left: 0vw;
     z-index: 2;
     transform-origin: 50% 30%;
     min-width: 3.4vw;
+    max-width: 7vw;
     /* Zorgen dat de origin zo staat de het logo eigenlijk niet verplaatst s*/
     transition: transform 0.5s ease, scale 0.3s ease;
+    rotate: -90deg;
 }
 
 #menu:hover {
@@ -65,7 +67,7 @@ header {
 }
 
 #menu-box {
-    display: none;
+    display: block;
     background-image: url("../Assets/menu_bg.png");
     background-position:center; 
     background-repeat: no-repeat;
@@ -159,7 +161,7 @@ header {
 .banner {
     z-index: -1;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     top: 0;
     left: 0;
     background: rgb(70, 83, 98);
@@ -170,7 +172,8 @@ header {
 }
 
 .banner img {
-    align-self: flex-end
+    align-self: flex-end;
+    width: 35vw;
 }
 
 /*---------------------------------------------------------------*/
@@ -435,7 +438,7 @@ footer {
 
     #menu {
         min-width: 3.4vw;
-        max-width: 20vw;
+        max-width: 30vw;
         z-index: 3;
     }
 
@@ -683,7 +686,7 @@ footer {
 
     #menu {
         min-width: 3.4vw;
-        max-width: 10vw;
+        max-width: 25vw;
         z-index: 3;
     }
 
@@ -937,15 +940,15 @@ footer {
 
     #menu {
         min-width: 3.4vw;
-        max-width: 12vw;
+        max-width: 20vw;
         z-index: 3;
     }
 
     #menu-box {
         background-image: url("../Assets/phone_menu_bg.png");
         background-size: contain;
-        top: 1vh;
-        width: 90vw;
+        top: 0.5vh;
+        width: 70vw;
         height: 14vh;
         z-index: 2;
     }
@@ -1187,7 +1190,7 @@ footer {
 
     #menu {
         min-width: 3.4vw;
-        max-width: 7vw;
+        max-width: 15vw;
         z-index: 3;
     }
 
@@ -1196,7 +1199,7 @@ footer {
         background-size: contain;
         top: 0vh;
         width: 50vw;
-        height: 14vh;
+        height: 13vh;
         z-index: 2;
     }
 
@@ -1440,7 +1443,7 @@ footer {
 
     #menu {
         min-width: 3.4vw;
-        max-width: 6vw;
+        max-width: 15vw;
         z-index: 3;
     }
 
@@ -1448,7 +1451,7 @@ footer {
         background-image: url("../Assets/phone_menu_bg.png");
         background-size: cover;
         top: 1vh;
-        width: 35vw;
+        width: 45vw;
         height: 14vh;
         z-index: 2;
     }
@@ -1456,7 +1459,7 @@ footer {
     #menu-box a {
         font-size: 25px;
         line-height: 30px;
-        margin-left: 10vw;
+        margin-left: 15vw;
     }
 
     .align-right {
@@ -1493,7 +1496,7 @@ footer {
     /*---------------------------------------------------------------*/
 
     .banner {
-        height: 100vh;
+        height: 90vh;
     }
 
     .banner img {
@@ -1690,7 +1693,7 @@ footer {
 
     #menu {
         min-width: 3.4vw;
-        max-width: 6vw;
+        max-width: 13vw;
         z-index: 3;
     }
 
@@ -1698,15 +1701,15 @@ footer {
         background-image: url("../Assets/phone_menu_bg.png");
         background-size: cover;
         top: 1vh;
-        width: 35vw;
-        height: 14vh;
+        width: 45vw;
+        height: 15vh;
         z-index: 2;
     }
 
     #menu-box a {
         font-size: 25px;
         line-height: 30px;
-        margin-left: 10vw;
+        margin-left: 15vw;
     }
 
     .align-right {
@@ -1743,7 +1746,7 @@ footer {
     /*---------------------------------------------------------------*/
 
     .banner {
-        height: 100vh;
+        height: 90vh;
     }
 
     .banner img {
@@ -1940,7 +1943,7 @@ footer {
 
     #menu {
         min-width: 3.4vw;
-        max-width: 6vw;
+        max-width: 10vw;
         z-index: 3;
     }
 
@@ -1993,7 +1996,7 @@ footer {
     /*---------------------------------------------------------------*/
 
     .banner {
-        height: 100vh;
+        height: 90vh;
     }
 
     .banner img {
@@ -2190,7 +2193,7 @@ footer {
 
     #menu {
         min-width: 3.4vw;
-        max-width: 6vw;
+        max-width: 10vw;
         z-index: 3;
     }
 
@@ -2199,7 +2202,7 @@ footer {
         background-size: cover;
         top: 1vh;
         width: 35vw;
-        height: 14vh;
+        height: 16vh;
         z-index: 2;
     }
 
@@ -2243,12 +2246,12 @@ footer {
     /*---------------------------------------------------------------*/
 
     .banner {
-        height: 100vh;
+        height: 90vh;
     }
 
     .banner img {
         align-self: center;
-        width: 50vw;
+        width: 40vw;
         margin-top: 10vh;
     }
 
@@ -2260,7 +2263,7 @@ footer {
         background-size: contain;
         background-repeat: no-repeat;
         width: 85vw;
-        height: 18vh;
+        height: 20vh;
         margin: 3vh auto 0 auto;
         font-size: 35px;
     }

@@ -1,15 +1,15 @@
-function expandMenu() {
+function closeMenu() {
     var menu = document.getElementById("menu");
     var menuBox = document.getElementById('menu-box');
 
-    if (menuBox.style.display == "block") {
+    if (menuBox.style.display == "block" || menuBox.style.display == "") {
         menuBox.style.display = "none";
         menuBox.style.opacity = "0";
-        menu.style.transform = 'rotate(0deg)';
+        menu.style.transform = 'rotate(90deg)';
     } else {
         menuBox.style.display = "block";
         menuBox.style.opacity = "1";
-        menu.style.transform = 'rotate(-90deg)';
+        menu.style.transform = 'rotate(0deg)';
     }
 }
 
