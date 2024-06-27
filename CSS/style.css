@@ -2522,8 +2522,8 @@ footer p {
         background-image: url("../Assets/phone_menu_bg.png");
         background-size: cover;
         top: 1vh;
-        width: 35vw;
-        height: 16vh;
+        width: 18vw;
+        height: 9vh;
         z-index: 2;
     }
 
@@ -2545,7 +2545,7 @@ footer p {
     }
 
     .checkbox-label {
-        width: 10vw;
+        width: 5vw;
         height: 4vh;
     }
 
@@ -2555,11 +2555,11 @@ footer p {
     }
 
     .checkbox:checked+.checkbox-label .ball {
-        transform: translateX(7vw);
+        transform: translateX(3.5vw);
     }
 
     #label img {
-        width: 3vw;
+        width: 1.5vw;
     }
 
     /*---------------------------------------------------------------*/
@@ -2584,7 +2584,7 @@ footer p {
         background-size: contain;
         background-repeat: no-repeat;
         width: 60vw;
-        height: 25vh;
+        height: 30vh;
         margin: 3vh auto 0 auto;
         font-size: 35px;
     }
